@@ -1,0 +1,94 @@
+.header {
+    background: #000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+.header-left {
+    width: 25%;
+}
+
+.header-left__logo {
+    width: 100%;
+    max-width: 400px;
+}
+
+.header-center {
+    width: 30%;
+}
+
+.search__input {
+    width: 100%;
+    max-width: 400px;
+    height: 30px;
+    padding: 5px 10px;
+}
+
+.header-right {
+    display: flex;
+    gap: 16px;
+}
+
+.header-nav__item {
+    display: flex;
+    align-items: center;
+}
+
+.header-nav__button {
+    color: #fff;
+    text-decoration: none;
+    background: transparent;
+    border: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.header__btn--sell{
+    width: 80px;
+    height: 40px;
+    color: #000000;
+    background: #fff;
+    text-decoration: none;
+    border-radius: 2px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    font-size: 18px;
+}
+
+input,
+textarea,
+select {
+    box-sizing: border-box;
+    width: 100%;
+    border: 1px solid #999;
+    background-color: #fff;
+    color: #000;
+    font-size: 14px;
+    line-height: 1.4;
+    border-radius: 2px;
+}
+
+@media screen and (max-width: 850px) {
+    .search__input{
+        font-size: 12px;
+    }
+
+    .header-nav__button{
+        font-size: 14px;
+    }
+
+    .header__btn--sell{
+        font-size: 14px;
+        width: 60px;
+        height: 30px;
+    }
+
+    .header-right {
+        gap: 10px;
+    }
+}

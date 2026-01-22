@@ -1,0 +1,50 @@
+
+.content{
+    margin: 0 auto;
+    padding: 60px 15px;
+    max-width: 1540px;
+}
+
+.message{
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.profile-form {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 500px;
+}
+
+.auth,
+.resent {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.auth-btn{
+    padding: 10px 20px;
+    background: #cccccc;
+    color: #000000;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+.resent-btn{
+    background: none;
+    border: none;
+    padding: 0;
+    color: #0066cc;
+    cursor: pointer;
+    font: inherit;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 850px){
+    .message{
+        font-size: 18px;
+    }
+}
+

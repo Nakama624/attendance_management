@@ -1,0 +1,116 @@
+.content{
+    margin: 0 auto;
+    padding: 60px 15px;
+    background-color: #EEEEEE;
+    min-height: 100vh;
+}
+
+.list{
+    width: 80%;
+    margin: 0 auto;
+    max-width: 1540px;
+}
+
+.list-ttl{
+    display: flex;
+    font-size: 22px;
+    font-weight: bold;
+    gap: 14px;
+}
+/* 勤怠一覧の前のバー */
+.list-ttl::before{
+    content: "";
+    width: 6px;
+    height: 1.6em;
+    background: #000;
+}
+
+/* 対象月選択のバー */
+.attendance-month{
+    background-color: #fff;
+    height: 40px;
+    border-radius: 10px;
+    width: 100%;
+    color: #777777;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    padding: 0 20px;
+}
+
+.last-month{
+    cursor: pointer;
+}
+
+
+.calendar-select{
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+
+    padding: 8px 14px;
+    background-color: #fff;
+    border-radius: 10px;
+
+    font-size: 16px;
+    font-weight: bold;
+    color: #000;
+    cursor: pointer;
+}
+
+.calendar-select i{
+    color: #777777;
+    font-size: 18px;
+}
+
+
+.next-month{
+    cursor: pointer;
+}
+
+.last-month::after{
+    content: "→";
+    font-size: 18px;
+    color: #B0B0B0;
+    font-weight: bold;
+}
+/* ここまで */
+
+
+
+.attendance-table{
+    background-color: #fff;
+    width: 100%;
+    border-radius: 10px;
+    color: #777777;
+    margin: 30px auto 0;
+    font-weight: bold;
+
+}
+
+.attendance-list__row{
+    text-align: center;
+    height:40px;
+}
+
+.attendance-date{
+    width:160px;
+}
+
+th {
+    border-bottom: 3px solid #EEEEEE;
+}
+
+tr{
+    border-bottom: 2px solid #EEEEEE;
+}
+
+.attendance-detail{
+    color:#000000;
+}
+
+
+
+@media screen and (max-width: 850px) {
+}

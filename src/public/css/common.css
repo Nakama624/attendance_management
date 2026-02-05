@@ -28,12 +28,13 @@
 
 .header-right {
     display: flex;
-    gap: 16px;
+    gap: 24px;
 }
 
 .header-nav__item {
     display: flex;
     align-items: center;
+    gap: 30px;
 }
 
 .header-nav__button {

@@ -31,6 +31,16 @@
     margin-top:10px;
 }
 
+.attendance__btn {
+    text-align: center;
+}
+
+.attendance-finish__breaktime-start--btn{
+    display: flex;
+    gap: 40px;
+    justify-content: center;;
+}
+
 .attendance__btn--black {
     color: #fff;
     background-color: #000000;
@@ -56,6 +66,7 @@
 .work-finish-message{
     font-weight: bold;
     font-size: 20px;
+    text-align: center;
 }
 
 @media screen and (max-width: 850px) {

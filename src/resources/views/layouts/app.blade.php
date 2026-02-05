@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Flea Market</title>
+    <title>Attendance Management</title>
     <link rel="stylesheet" href="{{ asset('css/sanitize.css') }}" />
     <link rel="stylesheet" href="{{ asset('css/common.css') }}" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
@@ -27,15 +27,9 @@
                 @if (Auth::check())
                 <!-- かつ一般スタッフの場合 -->
                 <div class="header-nav__item">
-                    <div class="header-nav__item">
-                        <a class="header-nav__button" href="/mypage?page=sell">勤怠</a>
-                    </div>
-                    <div class="header-nav__item">
-                        <a href="/sell" class="header__btn--sell">勤怠一覧</a>
-                    </div>
-                    <div class="header-nav__item">
-                        <a href="/sell" class="header__btn--sell">申請</a>
-                    </div>
+                    <a class="header-nav__button" href="/attendance">勤怠</a>
+                    <a class="header-nav__button" href="/attendance/list">勤怠一覧</a>
+                    <a class="header-nav__button"href="/stamp_correction_request/list">申請</a>
                     <form action="/logout" method="post">
                         @csrf
                         <button class="header-nav__button">ログアウト</button>

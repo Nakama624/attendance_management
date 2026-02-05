@@ -39,11 +39,6 @@
     padding: 0 20px;
 }
 
-.last-month{
-    cursor: pointer;
-}
-
-
 .calendar-select{
     display: inline-flex;
     align-items: center;
@@ -56,25 +51,8 @@
     font-size: 16px;
     font-weight: bold;
     color: #000;
-    cursor: pointer;
 }
 
-.calendar-select i{
-    color: #777777;
-    font-size: 18px;
-}
-
-
-.next-month{
-    cursor: pointer;
-}
-
-.last-month::after{
-    content: "→";
-    font-size: 18px;
-    color: #B0B0B0;
-    font-weight: bold;
-}
 /* ここまで */
 
 

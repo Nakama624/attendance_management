@@ -52,10 +52,7 @@
     font-weight: bold;
     color: #000;
 }
-
 /* ここまで */
-
-
 
 .attendance-table{
     background-color: #fff;
@@ -86,9 +83,33 @@ tr{
 
 .attendance-detail{
     color:#000000;
+    text-decoration: none;
 }
 
+.attendance-detail--disabled{
+    color: #000000;
+    pointer-events: none; /* クリック不可 */
+    cursor: default;
+    text-decoration: none;
+}
 
+.csv{
+    margin-top: 20px;
+    text-align: right;
+}
+
+.csv-btn{
+    padding: 5px 30px;
+    background: #000000;
+    color: #fff;
+    border-radius: 3px;
+    font-weight: bold;
+    font-size: 16px;
+    text-decoration: none;
+}
 
 @media screen and (max-width: 850px) {
+    .attendance-date{
+        width:120px;
+    }
 }

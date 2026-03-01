@@ -61,7 +61,7 @@
 
 @media screen and (max-width: 850px){
     .register-form{
-        max-width: 400px; /* ここは好み。なくてもOK */
+        max-width: 400px;
     }
 }
 

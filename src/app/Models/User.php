@@ -42,14 +42,19 @@ class User extends Authenticatable implements MustVerifyEmail
         'email_verified_at' => 'datetime',
     ];
 
+    // 管理者
+    public function isManager(){
+        return $this->manager_flg == 1;
+    }
+
     // リレーション
     // 申請者ユーザー
-    public function applicationsUser(){
+    public function applicationsUsers(){
         return $this->hasMany(Application::class, 'user_id');
     }
 
     // 承認者ユーザー
-    public function approvalUser(){
+    public function approvalUsers(){
         return $this->hasMany(Application::class, 'manager_id');
     }
 

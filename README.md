@@ -2,7 +2,7 @@
 
 ## Dockerビルド
 - `git clone git@github.com:Nakama624/attendance_management.git`
-- `cd flea-market-app`
+- `cd attendance_management`
 - `docker-compose up -d --build`
 
 

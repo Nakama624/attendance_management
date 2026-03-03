@@ -1,0 +1,22 @@
+includes:
+    - vendor/larastan/larastan/extension.neon
+
+parameters:
+    level: 5
+
+    paths:
+        - app
+
+
+    # モデルの動的プロパティまわりの誤検知を減らす
+    universalObjectCratesClasses:
+        - Illuminate\Database\Eloquent\Model
+        - Illuminate\Support\Collection
+
+    # 解析結果キャッシュの場所（安定用）
+    tmpDir: storage/phpstan
+
+    # フレームワーク由来のDoc警告
+    ignoreErrors:
+        - '#PHPDoc tag @var above a method has no effect#'
+        - '#PHPDoc tag @var does not specify variable name#'

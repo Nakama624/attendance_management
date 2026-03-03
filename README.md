@@ -69,7 +69,7 @@
 - nginx/1.21.1
 
 ## ER図
-
+![alt text](attendance_management.drawio.png)
 
 ## テストアカウント
 - 一般ユーザー：メールアドレス`ippan1@gmail.com`、パスワード `password`
@@ -79,14 +79,14 @@
 - 新規登録：http://localhost/register
 - phpMyAdmin：http://localhost:8080/
 
-## 一般ユーザー
+### 一般ユーザー
 - ログイン：http://localhost/login
 - 勤怠登録：http://localhost/attendance
 - 勤怠一覧：http://localhost/attendance/list
 - 申請一覧（承認待ち）：http://localhost/stamp_correction_request/list?page=pending
 
 
-## 管理者
+### 管理者
 - 管理者ログイン：http://localhost/admin/login
 - 勤怠一覧：http://localhost/admin/attendance/list
 - スタッフ一覧：http://localhost/admin/staff/list

@@ -1,0 +1,200 @@
+.content{
+    margin: 0 auto;
+    padding: 60px 15px;
+    background-color: #EEEEEE;
+    min-height: 100vh;
+}
+
+.list{
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.list-ttl{
+    display: flex;
+    font-size: 22px;
+    font-weight: bold;
+    gap: 14px;
+}
+
+/* タイトルの前のバー */
+.list-ttl::before{
+    content: "";
+    width: 6px;
+    height: 1.6em;
+    background: #000;
+}
+
+/* 詳細テーブル */
+.attendance-table{
+    width: 100%;
+    background: #fff;
+    border-radius: 10px;
+    border-collapse: separate;
+    border-spacing: 0;
+    margin-top: 30px;
+    font-weight: bold;
+    color: #777;
+}
+
+.attendance-list__row th,
+.attendance-list__row td{
+    height: 80px;
+    border-bottom: 2px solid #eee;
+    vertical-align: middle;
+}
+
+.attendance-list__row:last-child th,
+.attendance-list__row:last-child td{
+    border-bottom: none;
+}
+
+th{
+    width: 30%;
+    text-align: left;
+    padding-left: 50px;
+}
+
+.cell{
+    display: flex;
+    color: #000;
+    width:300px;
+}
+
+.cell--date,
+.cell--center{
+    gap: 150px;
+    padding-left: 22px;
+}
+
+.sep{
+    color: #777;
+    font-weight: bold;
+    width: 110px;
+    text-align: center;
+}
+
+.attendance-list__input{
+    width: 100px;
+    height: 28px;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+    font-weight: bold;
+    text-align: center;
+    outline: none;
+    position: static;
+    transform: none;
+}
+
+/* display */
+.attendance-list__display{
+    width: 100px;
+    height: 28px;
+    font-weight: bold;
+    text-align: center;
+    outline: none;
+    align-items: center;
+}
+
+.staff-pending-application{
+    color: #FF0000;
+    float: right;
+    margin-top: 15px;
+}
+/*  */
+
+.sep-display{
+    color: #000000;
+    font-weight: bold;
+    width: 110px;
+    text-align: center;
+    border: none;
+}
+
+.attendance-list__display--textarea{
+    align-items: center;
+    color: #000;
+    padding: 22px;
+}
+
+.attendance-list__textarea-row{
+    height:100px;
+}
+.attendance-list__textarea{
+    width: 300px;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+    font-weight: bold;
+    padding: 6px 10px;
+    resize: none;
+    outline: none;
+    font-size:12px;
+    height:70px;
+}
+
+/* 修正ボタン */
+/* 承認ボタン */
+.attendance-modify,
+.application-approve {
+    margin-top: 20px;
+    text-align: right;
+}
+
+.attendance-modify__btn,
+.application-approve__btn{
+    padding: 5px 30px;
+    background: #000000;
+    color: #fff;
+    border-radius: 3px;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.application-approved{
+    padding: 5px 25px;
+    background: #A9A9A9;
+    color: #fff;
+    border-radius: 3px;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+/* エラー */
+.form__error {
+    color: red;
+    font-size: 10px;
+    width: 100px;
+    white-space: nowrap;
+}
+
+.alert-success{
+    color: red;
+    text-align: center;
+    align-items: center;
+    height: 50px;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: #EEEEEE;
+}
+
+.cell-input{
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 100px;
+}
+
+@media screen and (max-width: 850px) {
+    .list{
+        max-width: 600px;
+        margin: 0 auto;
+    }
+
+    .cell--date{
+        gap: 120px;
+    }
+
+    .sep-display{
+        width:70px;
+    }
+}

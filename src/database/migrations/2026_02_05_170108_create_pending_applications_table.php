@@ -16,7 +16,7 @@ class CreatePendingApplicationsTable extends Migration
         Schema::create('pending_applications', function (Blueprint $table) {
             $table->id();
             $table->foreignId('application_id')->constrained();
-            $table->unsignedBigInteger('attendance_id')->nullable();
+            $table->unsignedBigInteger('attendance_id');
             $table->json('changes');
             $table->timestamps();
         });

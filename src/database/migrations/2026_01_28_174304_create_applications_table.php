@@ -16,9 +16,7 @@ class CreateApplicationsTable extends Migration
         Schema::create('applications', function (Blueprint $table) {
             $table->id();
             $table->foreignId('user_id')->constrained();
-            $table->foreignId('approver_id')
-                ->nullable()
-                ->constrained('users');
+            $table->foreignId('approver_id')->nullable()->constrained('users');
             $table->foreignId('attendance_id')->constrained();
             $table->foreignId('application_status_id')->constrained();
             $table->timestamp('approval_at')->nullable();

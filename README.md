@@ -5,7 +5,6 @@
 - `cd attendance_management`
 - `docker-compose up -d --build`
 
-
 ## Laravel環境構築
 - `docker-compose exec php bash`
 - `composer install`
@@ -13,6 +12,10 @@
 - `php artisan key:generate`
 - `php artisan migrate`
 - `php artisan db:seed`
+
+## テストアカウント
+- 一般ユーザー：メールアドレス`ippan1@gmail.com`、パスワード `password`
+- 管理者：メールアドレス`manager1@gmail.com`、パスワード `password` ※管理者はmanager_flg=1
 
 ## mailhog
 ### 環境設定
@@ -35,7 +38,7 @@
 - `php artisan key:generate --env=testing`
 - `php artisan migrate --env=testing`
 
-### テスト実行
+## テスト実行
 - 1.認証機能（一般ユーザー）：
   `vendor/bin/phpunit tests/Feature/RegisterTest.php`
 - 2.ログイン認証機能（一般ユーザー）：
@@ -77,10 +80,6 @@
 
 ## ER図
 ![alt text](attendance_management.drawio.png)
-
-## テストアカウント
-- 一般ユーザー：メールアドレス`ippan1@gmail.com`、パスワード `password`
-- 管理者：メールアドレス`manager1@gmail.com`、パスワード `password` ※管理者はmanager_flg=1
 
 ## URL
 - 新規登録：http://localhost/register

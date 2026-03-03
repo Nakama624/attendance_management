@@ -13,8 +13,7 @@
 - `php artisan migrate`
 - `php artisan db:seed`
 
-## mailhog
-### 環境設定
+## mailhog環境設定
 > `.env` ファイルを以下のように修正。
 > ```diff
 > -　MAIL_FROM_ADDRESS=null

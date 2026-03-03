@@ -13,6 +13,12 @@ npm-debug.log
 yarn-error.log
 /.idea
 /.vscode
-docker/mysql/data/*
-!docker/mysql/data/.gitignore
+docker/mysql/data/
+
+# PHPStan
+phpstan-baseline.neon
+.phpstan/
+storage/phpstan/
+src/storage/phpstan/
+
 

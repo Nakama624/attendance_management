@@ -1,8 +1,8 @@
-# flea-market-app
+# Attendance Management
 
 ## Dockerビルド
 - `git clone git@github.com:Nakama624/attendance_management.git`
-- `cd flea-market-app`
+- `cd attendance_management`
 - `docker-compose up -d --build`
 
 
@@ -69,11 +69,11 @@
 - nginx/1.21.1
 
 ## ER図
+![alt text](attendance_management.drawio.png)
 
-
-## テストユーザー
-- 一般ユーザー：ippan1@gmail.com　password
-- 管理者：manager1@gmail.com　password
+## テストアカウント
+- 一般ユーザー：メールアドレス`ippan1@gmail.com`、パスワード `password`
+- 管理者：メールアドレス`manager1@gmail.com`、パスワード `password`
 
 ## URL
 - 新規登録：http://localhost/register

@@ -1,4 +1,4 @@
-# flea-market-app
+# Attendance management
 
 ## Dockerビルド
 - `git clone git@github.com:Nakama624/attendance_management.git`

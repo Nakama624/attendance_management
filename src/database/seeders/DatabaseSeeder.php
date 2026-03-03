@@ -20,5 +20,6 @@ class DatabaseSeeder extends Seeder
         $this->call(AttendancesTableSeeder::class);
         $this->call(ApplicationsTableSeeder::class);
         $this->call(BreakTimesTableSeeder::class);
+        $this->call(PendingApplicationsTableSeeder::class);
     }
 }

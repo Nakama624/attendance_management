@@ -52,13 +52,13 @@
 - 11.勤怠詳細情報修正機能（一般ユーザー）：
  `vendor/bin/phpunit tests/Feature/ModifyAttendanceDetailTest.php`
 - 12.勤怠一覧情報取得機能（管理者）：
- `vendor/bin/phpunit tests/Feature/`
+ `vendor/bin/phpunit tests/Feature/AdminAttendanceListTest.php`
 - 13.勤怠詳細情報取得・修正機能（管理者）：
- `vendor/bin/phpunit tests/Feature/`
+ `vendor/bin/phpunit tests/Feature/AdminAttendanceDetailModifyTest.php`
 - 14.ユーザー情報取得機能（管理者）：
- `vendor/bin/phpunit tests/Feature/`
+ `vendor/bin/phpunit tests/Feature/AdminAttendanceListEachUsersTest.php`
 - 15.勤怠情報修正機能（管理者）：
- `vendor/bin/phpunit tests/Feature/`
+ `vendor/bin/phpunit tests/Feature/AdminAttendanceModifyTest.php`
 - 16.メール認証機能：
  `vendor/bin/phpunit tests/Feature/MailAuthTest.php`
 
@@ -69,20 +69,24 @@
 - nginx/1.21.1
 
 ## ER図
-![alt text](flea_market_app.drawio.png)
+
+
+## テストユーザー
+- 一般ユーザー：ippan1@gmail.com　password
+- 管理者：manager1@gmail.com　password
 
 ## URL
 - 新規登録：http://localhost/register
 - phpMyAdmin：http://localhost:8080/
 
-### 一般ユーザー
+## 一般ユーザー
 - ログイン：http://localhost/login
 - 勤怠登録：http://localhost/attendance
 - 勤怠一覧：http://localhost/attendance/list
 - 申請一覧（承認待ち）：http://localhost/stamp_correction_request/list?page=pending
 
 
-### 管理者
+## 管理者
 - 管理者ログイン：http://localhost/admin/login
 - 勤怠一覧：http://localhost/admin/attendance/list
 - スタッフ一覧：http://localhost/admin/staff/list

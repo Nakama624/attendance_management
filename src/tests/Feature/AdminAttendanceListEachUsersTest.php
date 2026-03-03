@@ -66,8 +66,8 @@ class AdminAttendanceListEachUsersTest extends TestCase
         ]);
         $response->assertSeeInOrder([
             '02/24(火)',
-            '10:00',
-            '19:00',
+            '9:30',
+            '16:30',
         ]);
         $response->assertSeeInOrder([
             '02/25(水)',

@@ -15,6 +15,7 @@ use Laravel\Fortify\Fortify;
 use Laravel\Fortify\Contracts\LogoutResponse;
 use App\Http\Responses\LogoutResponse as CustomLogoutResponse;
 
+// 静的解析ツールで必要
 use App\Models\User;
 use Illuminate\Support\Facades\Hash;
 

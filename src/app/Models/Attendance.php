@@ -21,13 +21,10 @@ class Attendance extends Model
 
     protected $casts = [
         'attendance_date' => 'date',
-        // start/finish を Carbon として扱えるように（nullもOK）
         'attendance_start_at'  => 'datetime',
         'attendance_finish_at' => 'datetime',
     ];
 
-    // Blade/配列生成で使う “計算済み属性” を自動で生やす（必要なら）
-    // ※ JSON にも乗る。不要なら消して、Controller側で $attendance->break_label 等を読むだけでもOK
     protected $appends = [
         'break_minutes',
         'work_minutes',
@@ -67,7 +64,6 @@ class Attendance extends Model
     // 休憩合計（分）
     public function getBreakMinutesAttribute(): int
     {
-        // with('breakTimes') していないとN+1になるので注意
         if (!$this->relationLoaded('breakTimes')) {
             $this->load('breakTimes');
         }
@@ -128,11 +124,6 @@ class Attendance extends Model
         $min = $m % 60;
         return $h . ':' . str_pad((string) $min, 2, '0', STR_PAD_LEFT);
     }
-
-
-
-
-
 
     public function computeStatusId(): int{
         // 退勤がある → 4

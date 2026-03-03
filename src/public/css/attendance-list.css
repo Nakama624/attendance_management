@@ -43,11 +43,9 @@
     display: inline-flex;
     align-items: center;
     gap: 8px;
-
-    padding: 8px 14px;
+    padding: 0;
     background-color: #fff;
     border-radius: 10px;
-
     font-size: 16px;
     font-weight: bold;
     color: #000;
@@ -117,6 +115,9 @@ tr{
 }
 
 @media screen and (max-width: 850px) {
+    .attendance-table{
+        font-size: 16px;
+    }
     .attendance-date{
         width:120px;
     }

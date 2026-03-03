@@ -8,7 +8,7 @@
 <div class="content">
     @include('components.login-form', [
         'title'  => '管理者ログイン',
-        'btn'  => '管理者ログイン',
+        'btn'  => '管理者ログインする',
         'isAdmin' => true,
     ])
 </div>

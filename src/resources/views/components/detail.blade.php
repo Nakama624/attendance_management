@@ -97,7 +97,7 @@
         <tr class="attendance-list__textarea-row">
             <th>備考</th>
             <td>
-                <textarea class="attendance-list__textarea" name="remarks">{{ $attendance->remarks }}</textarea>
+                <textarea class="attendance-list__textarea" name="remarks">{{ old('remarks', $attendance->remarks ?? '') }}</textarea>
                 <div class="form__error">
                     @error('remarks')
                         {{ $message }}

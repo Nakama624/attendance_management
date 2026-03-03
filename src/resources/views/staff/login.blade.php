@@ -8,7 +8,7 @@
 <div class="content">
     @include('components.login-form', [
         'title'  => 'ログイン',
-        'btn'  => 'ログイン',
+        'btn'  => 'ログインする',
     ])
 </div>
 @endsection

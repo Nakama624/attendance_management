@@ -13,11 +13,12 @@
 
 .attendance-status{
     padding: 3px 13px;
-    border: 2px solid #DADADA;
-    background-color: #DADADA;
+    border: 2px solid #CFCFCF;
+    background-color: #CFCFCF;
     color: #3C3C3C;
     border-radius: 20px;
     font-size: 13px;
+    font-weight: bold;
 }
 
 .attendance-date{

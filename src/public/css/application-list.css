@@ -75,7 +75,14 @@ tr{
 }
 
 @media screen and (max-width: 850px) {
+    .content{
+        padding: 60px 3px;
+    }
+
     .attendance-table{
         font-size: 14px;
+    }
+    .attendance-list__reason{
+        width:180px;
     }
 }

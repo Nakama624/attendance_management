@@ -166,7 +166,7 @@ class ApplicationController extends Controller
         $user = Auth::user();
         $isManager = $user->isManager();
 
-        $query = Application::with(['attendance', 'applicationStatus', 'latestPending']);
+        $query = Application::with(['user','attendance', 'applicationStatus', 'latestPending']);
 
         // 一般ユーザーなら自分の分だけに絞る
         if (!$isManager) {

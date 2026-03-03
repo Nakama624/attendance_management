@@ -1,0 +1,90 @@
+.content{
+    margin: 0 auto;
+    padding: 60px 15px;
+    background-color: #EEEEEE;
+    min-height: 100vh;
+}
+
+.attendance-stamp-form {
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+}
+
+.attendance-status{
+    padding: 3px 13px;
+    border: 2px solid #DADADA;
+    background-color: #DADADA;
+    color: #3C3C3C;
+    border-radius: 20px;
+    font-size: 13px;
+}
+
+.attendance-date{
+    font-size: 25px;
+    margin-bottom: 5px;
+}
+
+.attendance-time{
+    font-size: 60px;
+    margin:5px auto 60px;
+}
+
+.attendance__btn {
+    text-align: center;
+}
+
+.attendance-finish__breaktime-start--btn{
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+}
+
+.attendance__btn--black {
+    color: #fff;
+    background-color: #000000;
+    border: 2px solid #000000;
+    padding: 5px 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    width:150px;
+    font-size: 25px;
+}
+
+.attendance__btn--white {
+    color: #000000;
+    background-color: #fff;
+    border: 2px solid #fff;
+    padding: 5px 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    width:150px;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.work-finish-message{
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+}
+
+@media screen and (max-width: 850px) {
+    .attendance-date{
+        font-size: 20px;
+    }
+
+    .attendance-time{
+        font-size: 50px;
+        margin:5px auto 40px;
+    }
+
+    .attendance__btn--black,
+    .attendance__btn--white{
+        width:120px;
+    }
+
+    .work-finish-message{
+        font-size: 18px;
+    }
+}

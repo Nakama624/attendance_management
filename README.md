@@ -13,10 +13,6 @@
 - `php artisan migrate`
 - `php artisan db:seed`
 
-## テストアカウント
-- 一般ユーザー：メールアドレス`ippan1@gmail.com`、パスワード `password`
-- 管理者：メールアドレス`manager1@gmail.com`、パスワード `password` ※管理者はmanager_flg=1
-
 ## mailhog
 ### 環境設定
 > `.env` ファイルを以下のように修正。
@@ -24,6 +20,10 @@
 > -　MAIL_FROM_ADDRESS=null
 > +　MAIL_FROM_ADDRESS=no-reply@example.com
 >```
+
+## テストアカウント
+- 一般ユーザー：メールアドレス`ippan1@gmail.com`、パスワード `password`
+- 管理者：メールアドレス`manager1@gmail.com`、パスワード `password` ※管理者はmanager_flg=1
 
 ## 単体テスト
 ### DBを作成

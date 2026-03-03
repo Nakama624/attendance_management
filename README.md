@@ -22,8 +22,14 @@
 >```
 
 ## テストアカウント
-- 一般ユーザー：メールアドレス`ippan1@gmail.com`、パスワード `password`
-- 管理者：メールアドレス`manager1@gmail.com`、パスワード `password` ※管理者はmanager_flg=1
+### 管理者
+- メールアドレス`manager1@gmail.com`
+- パスワード `password`
+  ※管理者はmanager_flg=1
+  
+### 一般ユーザー
+- メールアドレス`ippan1@gmail.com`
+- パスワード `password`
 
 ## 単体テスト
 ### DBを作成
